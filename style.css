@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+}
+
+/* INDEX PAGE----------------------------------*/
+.tremble a:hover {
+  -webkit-animation: tremble 75ms infinite;
+          animation: tremble 75ms infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes tremble {
+  0% {
+    -webkit-transform: rotate(1.5deg);
+            transform: rotate(1.5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-1.5deg);
+            transform: rotate(-1.5deg);
+  }
+  100% {
+    -webkit-transform: rotate(1.5deg);
+            transform: rotate(1.5deg);
+  }
+}
+
+@keyframes tremble {
+  0% {
+    -webkit-transform: rotate(1.5deg);
+            transform: rotate(1.5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-1.5deg);
+            transform: rotate(-1.5deg);
+  }
+  100% {
+    -webkit-transform: rotate(1.5deg);
+            transform: rotate(1.5deg);
+  }
+}
+
+.nav {
+  position: absolute;
+  top: 30%;
+}
+
+.nav li {
+  display: inline-block;
+  margin-left: 110px;
+  margin-top: 30px;
+}
+
+.nav li a {
+  font-size: 30px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  background-color: yellow;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  line-height: 10px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.logo a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.logo a p {
+  padding: 45px 0;
+  line-height: 25px;
+  -webkit-transform: rotate(345deg);
+          transform: rotate(345deg);
+}
+
+.logo--absolute {
+  position: absolute;
+  display: inline;
+}
+
+.logo--absolute--text {
+  text-align: center;
+  color: black;
+  margin: 5px;
+}
+
+/*consoleOpen class*/
+.consoleOpen {
+  position: absolute;
+  font-size: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.consoleOpen--black {
+  top: 10%;
+}
+
+.consoleOpen--white {
+  top: 20%;
+  color: white;
+}
+
+/*VERY HARD---------------------------------------------------------------*/
+#veryHard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

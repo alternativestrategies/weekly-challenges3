@@ -1,0 +1,100 @@
+$logo-color: yellow;
+
+body {
+    margin: 0;
+}
+
+/* INDEX PAGE----------------------------------*/
+.tremble a:hover{ 
+  animation: tremble 75ms infinite;
+  animation-timing-function: linear;   
+}
+@keyframes tremble {
+  0% { transform: rotate(1.5deg); }
+  50% { transform: rotate(-1.5deg); }
+  100% { transform: rotate(1.5deg); }
+}
+
+.nav{ 
+  position: absolute;
+  top: 30%;
+  li {
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 30px;
+      a{
+      font-size: 30px;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      overflow: hidden;
+      display: inline-block;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
+.logo {
+  background-color: $logo-color;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  line-height: 10px;
+  transition: width 1s;
+  &:hover {
+    transform: scale(1.1);
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    p {
+      padding: 45px 0;
+      line-height: 25px;
+      transform: rotate(345deg);
+    }
+  }
+  &--absolute{
+    position: absolute;
+    display: inline;
+    &--text {
+      text-align: center;
+      color: black;
+      margin: 5px;
+    }
+  }
+}
+
+/*consoleOpen class*/
+.consoleOpen{
+    position: absolute;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &--black {
+        top: 10%;
+    }
+    &--white {
+        top: 20%;
+        color: white;
+    }
+}
+
+/*VERY HARD---------------------------------------------------------------*/
+#veryHard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+}
